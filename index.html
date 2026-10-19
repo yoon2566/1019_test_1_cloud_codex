@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>작은 공룡 달리기</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;background:#f4f1e8;color:#283b31;font-family:system-ui,sans-serif}main{width:min(900px,94vw)}header{display:flex;align-items:center;justify-content:space-between;gap:20px}h1{font-size:clamp(24px,5vw,38px);margin-bottom:8px}p{line-height:1.6}canvas{display:block;width:100%;background:#fffdf6;border:2px solid #283b31;border-radius:16px;touch-action:manipulation}button{padding:12px 24px;border:0;border-radius:30px;background:#283b31;color:white;font-size:16px;cursor:pointer}button:focus-visible{outline:3px solid #df9d36;outline-offset:4px}.controls{display:flex;align-items:center;justify-content:space-between;gap:16px}#status{min-height:1.6em}footer{font-size:13px;color:#607067}
+</style>
+</head>
+<body><main>
+<header><div><h1>작은 공룡 달리기</h1><p>선인장을 뛰어넘어 최고 기록에 도전하세요.</p></div><strong id="score" aria-label="점수">00000</strong></header>
+<canvas id="game" width="900" height="320" role="img" aria-label="공룡이 선인장을 피해 달리는 게임"></canvas>
+<div class="controls"><p>스페이스 / ↑ / 화면 터치로 점프</p><button id="action" type="button">게임 시작</button></div>
+<p id="status" role="status">시작 버튼을 눌러 달려보세요.</p>
+<footer>외부 라이브러리 없이 만든 작은 브라우저 게임 · 탭을 떠나면 자동 일시정지</footer>
+</main><script src="game.js"></script></body></html>
